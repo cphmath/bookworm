@@ -9,4 +9,9 @@ def create_client(app_token=None, timeout=180):
     client.timeout=timeout
     return client
 
-def query_checkout_data(client, query, )
+
+def query_checkout_data(client, query):
+    """
+    Takes a data.seattle.gov Socrata client and a SOQL
+    """
+    return client.get('tmmm-ytt6', query=query)
