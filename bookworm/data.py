@@ -24,7 +24,6 @@ CHECKOUTS_BY_USAGE_CLASS_QUERY = """
 def get_checkouts_by_usage_class(query=CHECKOUTS_BY_USAGE_CLASS_QUERY):
     with open("config.yml", 'r') as ymlfile:
         cfg = yaml.safe_load(ymlfile)
-        
     client = Socrata(cfg['domain'], cfg['app_token'], timeout=180)
     print('Client created, querying data...')
     result = client.get(cfg['dataset_id'], query=query)
