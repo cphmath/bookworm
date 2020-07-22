@@ -23,6 +23,12 @@ CHECKOUTS_QUERY = """
 
 
 def get_checkouts_by_usage_class(query=CHECKOUTS_QUERY, filename='usage_class_data.csv', force_download=False):
+    """
+    Loads mosnthly checkout data by usage class or pulls fresh data from
+    data.seattle.gov using the CHECKOUTS_QUERY and a Socrata client and saves it
+    locally. Once raw data is pulled or loaded, data types are fixed and a new
+    date column is created.
+    """
     if force_download or not os.path.exists(filename):
         with open("config.yml", 'r') as ymlfile:
             cfg = yaml.safe_load(ymlfile)
