@@ -3,10 +3,10 @@ Data analysis of Seattle Public Library checkouts by title 2005-2020 from
 https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6
 
 ### Analysis
-With everyone inside the last few months, I have been reading a lot more. I
-wanted to see if others in Seattle had done the same. I analyzed digital
-checkout trends from 2017-2020 to see if there was an incremental increase in
-digital checkouts during covid-19
+With much more time inside the last few months, I have been spending a lot of
+time reading. I wanted to see if others in Seattle had been doing the same. I
+analyzed digital checkout trends from 2017-2020 to see if there was an
+incremental increase in digital library book checkouts during the covid-19 pandemic.
 
 See the full analysis in [notebooks/digital_checkout_incrementality](https://github.com/cphmath/bookworm/tree/master/notebooks/digital_checkout_incrementality.ipynb)
 
