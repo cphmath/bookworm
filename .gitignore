@@ -130,3 +130,6 @@ dmypy.json
 
 # Config file with api token information
 config.yml
+
+# data
+usage_class_data.csv
